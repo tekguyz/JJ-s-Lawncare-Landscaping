@@ -15,7 +15,7 @@ export default function ContactForm() {
     formData.append('form-name', 'jjs-lawncare-contact');
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/forms.html", {
         method: "POST",
         headers: { "X-Requested-With": "XMLHttpRequest" },
         body: formData,
@@ -91,7 +91,7 @@ export default function ContactForm() {
           >
             <input type="hidden" name="form-name" value="jjs-lawncare-contact" />
             <p className="hidden">
-              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              <label>Don&apos;t fill this out if you&apos;re human: <input name="bot-field" /></label>
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

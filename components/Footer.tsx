@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Brand Column */}
         <div className="space-y-6">
           <div className="font-black text-3xl tracking-tighter uppercase">
-            JJ's <span className="text-slime-green">Lawncare</span>
+            JJ&apos;s <span className="text-slime-green">Lawncare</span>
           </div>
           <p className="text-gray-400 font-medium leading-relaxed">
             Professional, licensed, and insured landscaping services in Deerfield Beach and surrounding areas.
@@ -75,7 +75,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-center text-gray-500 text-xs font-bold uppercase tracking-[0.2em]">
-        &copy; {new Date().getFullYear()} JJ's Lawncare & Landscaping. All Rights Reserved.
+        &copy; {new Date().getFullYear()} JJ&apos;s Lawncare & Landscaping. All Rights Reserved.
       </div>
     </footer>
   );
