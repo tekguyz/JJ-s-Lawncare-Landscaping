@@ -43,9 +43,9 @@ export default function Navbar() {
           
           {/* Desktop Links - Centered */}
           <div className="hidden md:flex items-center gap-8 font-black uppercase tracking-widest text-sm text-white absolute left-1/2 transform -translate-x-1/2">
-            <a href="#services" className="hover:text-slime-green transition-colors">Services</a>
-            <a href="#about" className="hover:text-slime-green transition-colors">About</a>
-            <a href="#contact" className="hover:text-slime-green transition-colors">Estimate</a>
+            <a href="#services" className="hover:text-slime-green active:scale-95 transition-all p-2">Services</a>
+            <a href="#about" className="hover:text-slime-green active:scale-95 transition-all p-2">About</a>
+            <a href="#contact" className="hover:text-slime-green active:scale-95 transition-all p-2">Estimate</a>
           </div>
 
           {/* Desktop Links - Right */}
@@ -54,14 +54,15 @@ export default function Navbar() {
               href="https://facebook.com/JJslawn"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-slime-green transition-colors"
-              aria-label="Facebook"
+              className="text-white hover:text-slime-green active:scale-95 transition-all p-2"
+              aria-label="Visit JJ's Lawncare Facebook Page"
             >
               <Facebook className="w-6 h-6" />
             </a>
             <a
               href="tel:+17547792837"
-              className="flex items-center gap-2 text-white font-bold tracking-wider hover:text-slime-green transition-colors"
+              className="flex items-center gap-2 text-white font-bold tracking-wider hover:text-slime-green active:scale-95 transition-all p-2"
+              aria-label="Call JJ's Lawncare at (754) 779-2837"
             >
               <Phone className="w-5 h-5 text-slime-green" />
               (754) 779-2837
@@ -70,9 +71,10 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button 
-            className="md:hidden relative z-50 text-slime-green hover:text-white transition-colors"
+            className="md:hidden relative z-50 text-slime-green hover:text-white active:scale-95 transition-all p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle Menu"
+            aria-label="Toggle mobile menu"
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
           </button>
@@ -86,17 +88,17 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col items-center gap-10 font-black uppercase tracking-widest text-3xl text-slime-green">
-          <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-white transition-colors transform hover:scale-110">Services</a>
-          <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-white transition-colors transform hover:scale-110">About</a>
-          <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-white transition-colors transform hover:scale-110">Estimate</a>
+          <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-white active:scale-95 transition-all transform hover:scale-110 p-2 min-h-[44px] flex items-center">Services</a>
+          <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-white active:scale-95 transition-all transform hover:scale-110 p-2 min-h-[44px] flex items-center">About</a>
+          <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-white active:scale-95 transition-all transform hover:scale-110 p-2 min-h-[44px] flex items-center">Estimate</a>
           
           <div className="w-24 h-1 bg-white/10 my-4"></div>
           
-          <a href="tel:+17547792837" className="flex items-center gap-3 text-white text-xl hover:text-slime-green transition-colors">
+          <a href="tel:+17547792837" className="flex items-center gap-3 text-white text-xl hover:text-slime-green active:scale-95 transition-all p-2 min-h-[44px]" aria-label="Call JJ's Lawncare at (754) 779-2837">
             <Phone className="w-6 h-6 text-slime-green" />
             (754) 779-2837
           </a>
-          <a href="https://facebook.com/JJslawn" target="_blank" rel="noopener noreferrer" className="text-white hover:text-slime-green transition-colors mt-2">
+          <a href="https://facebook.com/JJslawn" target="_blank" rel="noopener noreferrer" className="text-white hover:text-slime-green active:scale-95 transition-all mt-2 p-2 min-h-[44px] flex items-center justify-center" aria-label="Visit JJ's Lawncare Facebook Page">
             <Facebook className="w-8 h-8" />
           </a>
         </div>

@@ -15,7 +15,7 @@ export default function ContactForm() {
     formData.append('form-name', 'jjs-lawncare-contact');
 
     try {
-      const response = await fetch("/forms.html", {
+      const response = await fetch("/", {
         method: "POST",
         headers: { "X-Requested-With": "XMLHttpRequest" },
         body: formData,
@@ -101,7 +101,7 @@ export default function ContactForm() {
                   required 
                   type="text" 
                   name="full_name" 
-                  className="w-full bg-white/5 border-2 border-white/10 p-4 text-white focus:border-slime-green outline-none transition-colors rounded-sm"
+                  className="w-full bg-white/5 border-2 border-white/10 p-4 text-white text-base focus:border-slime-green outline-none transition-colors rounded-sm"
                   placeholder="John Doe"
                 />
               </div>
@@ -111,7 +111,7 @@ export default function ContactForm() {
                   required 
                   type="tel" 
                   name="phone_number" 
-                  className="w-full bg-white/5 border-2 border-white/10 p-4 text-white focus:border-slime-green outline-none transition-colors rounded-sm"
+                  className="w-full bg-white/5 border-2 border-white/10 p-4 text-white text-base focus:border-slime-green outline-none transition-colors rounded-sm"
                   placeholder="(754) 779-2837"
                 />
               </div>
@@ -123,7 +123,7 @@ export default function ContactForm() {
                 required 
                 type="email" 
                 name="email" 
-                className="w-full bg-white/5 border-2 border-white/10 p-4 text-white focus:border-slime-green outline-none transition-colors rounded-sm"
+                className="w-full bg-white/5 border-2 border-white/10 p-4 text-white text-base focus:border-slime-green outline-none transition-colors rounded-sm"
                 placeholder="john@example.com"
               />
             </div>
@@ -134,7 +134,7 @@ export default function ContactForm() {
                 required 
                 type="text" 
                 name="address" 
-                className="w-full bg-white/5 border-2 border-white/10 p-4 text-white focus:border-slime-green outline-none transition-colors rounded-sm"
+                className="w-full bg-white/5 border-2 border-white/10 p-4 text-white text-base focus:border-slime-green outline-none transition-colors rounded-sm"
                 placeholder="123 Deerfield Beach Blvd"
               />
             </div>
@@ -162,7 +162,7 @@ export default function ContactForm() {
               <textarea 
                 name="message" 
                 rows={4}
-                className="w-full bg-white/5 border-2 border-white/10 p-4 text-white focus:border-slime-green outline-none transition-colors rounded-sm resize-none"
+                className="w-full bg-white/5 border-2 border-white/10 p-4 text-white text-base focus:border-slime-green outline-none transition-colors rounded-sm resize-none"
                 placeholder="Tell us what you need..."
               ></textarea>
             </div>
@@ -170,7 +170,7 @@ export default function ContactForm() {
             <button 
               type="submit" 
               disabled={isSubmitting}
-              className="w-full bg-ribbon-red text-white py-5 rounded-sm font-black uppercase tracking-[0.2em] text-lg flex items-center justify-center gap-3 hover:bg-red-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-ribbon-red text-white py-5 rounded-sm font-black uppercase tracking-[0.2em] text-lg flex items-center justify-center gap-3 hover:bg-red-700 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <>

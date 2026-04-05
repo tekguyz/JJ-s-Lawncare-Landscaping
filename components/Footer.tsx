@@ -18,8 +18,8 @@ export default function Footer() {
               href="https://facebook.com/JJslawn" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-white/10 p-3 rounded-sm hover:bg-slime-green hover:text-asphalt-black transition-all"
-              aria-label="Facebook"
+              className="bg-white/10 p-3 rounded-sm hover:bg-slime-green hover:text-asphalt-black active:scale-95 transition-all min-h-[44px] min-w-[44px] flex items-center justify-center"
+              aria-label="Visit JJ's Lawncare Facebook Page"
             >
               <Facebook className="w-6 h-6" />
             </a>
@@ -31,18 +31,18 @@ export default function Footer() {
           <h4 className="text-xl font-black uppercase tracking-tight text-slime-green">Contact Us</h4>
           <ul className="space-y-4">
             <li>
-              <a href="tel:+17547792837" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
+              <a href="tel:+17547792837" className="flex items-center gap-3 text-gray-300 hover:text-white active:scale-95 transition-all group min-h-[44px]" aria-label="Call JJ's Lawncare at (754) 779-2837">
                 <Phone className="w-5 h-5 text-slime-green group-hover:scale-110 transition-transform" />
                 <span className="font-bold">(754) 779-2837</span>
               </a>
             </li>
             <li>
-              <a href="mailto:Jjlawncare06@gmail.com" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
+              <a href="mailto:Jjlawncare06@gmail.com" className="flex items-center gap-3 text-gray-300 hover:text-white active:scale-95 transition-all group min-h-[44px]" aria-label="Email JJ's Lawncare at Jjlawncare06@gmail.com">
                 <Mail className="w-5 h-5 text-slime-green group-hover:scale-110 transition-transform" />
                 <span className="font-bold">Jjlawncare06@gmail.com</span>
               </a>
             </li>
-            <li className="flex items-start gap-3 text-gray-300">
+            <li className="flex items-start gap-3 text-gray-300 min-h-[44px]">
               <MapPin className="w-5 h-5 text-slime-green mt-1 shrink-0" />
               <span className="font-bold leading-tight">
                 340 SW 1st Terrace<br />
@@ -56,9 +56,9 @@ export default function Footer() {
         <div className="space-y-6">
           <h4 className="text-xl font-black uppercase tracking-tight text-slime-green">Quick Links</h4>
           <ul className="space-y-3 font-bold uppercase text-sm tracking-widest">
-            <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
-            <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-            <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Free Quote</a></li>
+            <li><a href="#services" className="text-gray-400 hover:text-white active:scale-95 transition-all inline-flex min-h-[44px] items-center">Services</a></li>
+            <li><a href="#about" className="text-gray-400 hover:text-white active:scale-95 transition-all inline-flex min-h-[44px] items-center">About Us</a></li>
+            <li><a href="#contact" className="text-gray-400 hover:text-white active:scale-95 transition-all inline-flex min-h-[44px] items-center">Free Quote</a></li>
           </ul>
         </div>
 

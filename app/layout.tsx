@@ -11,6 +11,9 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "JJ's Lawncare & Landscaping | Deerfield Beach Tree Trimming",
   description: 'Professional lawn care, landscaping, and specialized tree trimming in Deerfield Beach, FL. Licensed (Lic. # B1298) and Insured. Call or text for a free quote.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
@@ -91,7 +94,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="antialiased font-sans bg-white text-asphalt-black flex flex-col min-h-screen" suppressHydrationWarning>
+      <body className="antialiased font-sans bg-white text-asphalt-black flex flex-col min-h-screen overflow-x-hidden" suppressHydrationWarning>
         <div className="bg-asphalt-black text-white text-sm font-bold py-2 px-4 text-center tracking-wider uppercase">
           Licensed & Insured | Lic. # B1298 | Deerfield Beach, FL
         </div>

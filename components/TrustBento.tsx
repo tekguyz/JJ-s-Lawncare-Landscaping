@@ -54,7 +54,8 @@ export default function TrustBento() {
               href="https://facebook.com/JJslawn" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-asphalt-black text-white px-6 py-3 rounded-sm font-black uppercase tracking-widest text-sm hover:bg-ribbon-red transition-colors w-fit"
+              className="inline-flex items-center justify-center gap-2 bg-asphalt-black text-white px-6 py-3 rounded-sm font-black uppercase tracking-widest text-sm hover:bg-ribbon-red active:scale-95 transition-all w-fit min-h-[44px]"
+              aria-label="Visit JJ's Lawncare Facebook Page"
             >
               @JJslawn <ArrowUpRight className="w-4 h-4" />
             </a>

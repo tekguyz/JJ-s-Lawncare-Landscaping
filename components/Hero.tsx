@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image 
           src="https://images.unsplash.com/photo-1558904541-efa843a96f01?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-          alt="Professional lawn care and landscaping" 
+          alt="JJ's Lawncare truck parked on a freshly cut lawn with towering palm trees" 
           fill 
           className="object-cover object-center" 
           priority 
@@ -36,13 +36,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
               href="#contact" 
-              className="bg-ribbon-red text-white px-8 py-4 rounded-sm font-black uppercase tracking-widest text-sm md:text-base flex items-center justify-center gap-2 hover:bg-red-700 transition-colors text-center"
+              className="bg-ribbon-red text-white px-8 py-4 rounded-sm font-black uppercase tracking-widest text-sm md:text-base flex items-center justify-center gap-2 hover:bg-red-700 active:scale-95 transition-all text-center min-h-[44px]"
             >
               REQUEST FAST ESTIMATE
             </a>
             <a 
               href="tel:+17547792837" 
-              className="bg-transparent border-4 border-slime-green text-slime-green px-8 py-4 rounded-sm font-black uppercase tracking-widest text-sm md:text-base flex items-center justify-center gap-2 hover:bg-slime-green hover:text-asphalt-black transition-colors text-center"
+              className="bg-transparent border-4 border-slime-green text-slime-green px-8 py-4 rounded-sm font-black uppercase tracking-widest text-sm md:text-base flex items-center justify-center gap-2 hover:bg-slime-green hover:text-asphalt-black active:scale-95 transition-all text-center min-h-[44px]"
             >
               <Phone className="w-5 h-5" />
               CALL: (754) 779-2837

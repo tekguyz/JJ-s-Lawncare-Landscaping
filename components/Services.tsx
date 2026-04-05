@@ -39,7 +39,7 @@ export default function Services() {
             <a
               key={index}
               href="#contact"
-              className="group bg-asphalt-black p-8 rounded-sm flex flex-col h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-b-4 border-transparent hover:border-slime-green"
+              className="group bg-asphalt-black p-8 rounded-sm flex flex-col h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-b-4 border-transparent hover:border-slime-green active:scale-95"
             >
               <div className="mb-6">
                 <service.icon className="w-12 h-12 text-slime-green" />
