@@ -41,6 +41,12 @@ export default function Hero() {
               REQUEST FAST ESTIMATE
             </a>
             <a 
+              href="sms:+17547792837?body=Hi%20JJ%27s!%20I%27d%20like%20a%20free%20estimate%20for%20my%20property.%20Here%20is%20a%20photo%20to%20get%20started:" 
+              className="bg-asphalt-black border-4 border-white text-white px-8 py-4 rounded-sm font-black uppercase tracking-widest text-sm md:text-base flex items-center justify-center gap-2 hover:bg-white hover:text-asphalt-black active:scale-95 transition-all text-center min-h-[44px]"
+            >
+              TEXT FOR ESTIMATE
+            </a>
+            <a 
               href="tel:+17547792837" 
               className="bg-transparent border-4 border-slime-green text-slime-green px-8 py-4 rounded-sm font-black uppercase tracking-widest text-sm md:text-base flex items-center justify-center gap-2 hover:bg-slime-green hover:text-asphalt-black active:scale-95 transition-all text-center min-h-[44px]"
             >

@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, MessageSquare } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -34,6 +34,12 @@ export default function Footer() {
               <a href="tel:+17547792837" className="flex items-center gap-3 text-gray-300 hover:text-white active:scale-95 transition-all group min-h-[44px]" aria-label="Call JJ's Lawncare at (754) 779-2837">
                 <Phone className="w-5 h-5 text-slime-green group-hover:scale-110 transition-transform" />
                 <span className="font-bold">(754) 779-2837</span>
+              </a>
+            </li>
+            <li>
+              <a href="sms:+17547792837?body=Hi%20JJ%27s!%20I%27d%20like%20a%20free%20estimate%20for%20my%20property.%20Here%20is%20a%20photo%20to%20get%20started:" className="flex items-center gap-3 text-gray-300 hover:text-white active:scale-95 transition-all group min-h-[44px]" aria-label="Text JJ's Lawncare at (754) 779-2837">
+                <MessageSquare className="w-5 h-5 text-slime-green group-hover:scale-110 transition-transform" />
+                <span className="font-bold">Text Us A Photo</span>
               </a>
             </li>
             <li>
